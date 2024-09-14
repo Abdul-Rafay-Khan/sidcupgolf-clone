@@ -1,0 +1,1131 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat/Montserrat-Black.ttf);
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+body::-webkit-scrollbar{
+    display: block;
+    width: 10px;
+ background: black;
+}
+body::-webkit-scrollbar-thumb{
+   background-color: #95C11E;
+   border-radius: 50px;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#cursor{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #95C11E;
+    z-index: 99;
+    position: fixed;
+    transition: all linear 0.1s;
+}
+#cursor-blur{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    background-color: #96c11e5d;
+    z-index: 9;
+    position: fixed;
+    transition: all linear 0.2s;
+    filter: blur(80px);
+}
+.respo-nav{
+    display: none;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:5vw 10vw;
+    gap: 3vw;
+    z-index: 99;
+}
+nav img{
+    height: 5vw;
+}
+nav h4:hover{
+   color: #95c11e;
+}
+nav h4{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: 900;
+    cursor: pointer;
+ 
+}
+nav i{
+    display: none;
+}
+video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+position: fixed;
+z-index: -1;
+}
+#main{
+position: relative;
+background-color: rgba(0,0 ,0,0.4);
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+}
+
+#page1 h1{
+    font-size: 9vw;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+   color: black;
+   top: -4.5px;
+   left: -4.5px;
+-webkit-text-stroke: 1px #95C11E;
+z-index: -1;
+}
+#page1 h3{
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+
+}
+#page1 p{
+    font-size: 1.9vw;
+    font-weight: 100;
+    width: 60%;
+}
+#page2{
+   min-height: 100vh;
+    width: 100%;
+z-index: 10;
+position: relative;
+}
+#scroller{
+white-space: nowrap;
+z-index: 10;
+overflow-x: auto;
+overflow-y: hidden;
+cursor: pointer;
+position: relative;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    font-size: 10vw;
+    font-weight: 900;
+    margin-right: 4px;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    text-transform: uppercase;
+}
+#scroller-in h1:hover{
+    color: #95C11E;
+    -webkit-text-stroke: 2px #95c11e;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+    
+}
+@keyframes scroll {
+    from {
+transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+#about-us{
+    margin-top: 10vw;
+    height: 20vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5vw;
+    z-index: 10;
+  margin-bottom: 15vw;
+    
+}
+#about-us img{
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#about-us-in{
+    width: 55%;
+    text-align: center;
+}
+#about-us-in h4{
+    font-size: 5vw;
+    font-weight: 900;
+    margin-bottom: 2vw;
+}
+#about-us-in p{
+    font-size: 1.7vw;
+    font-weight: 550;
+}
+#card-containers{
+    height: 60vh;
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    z-index: 10;
+}
+.card{
+    height: 100%;
+    width:24%;
+    background-color: blue;
+    border-radius: 20px;
+  background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    
+}
+#card1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1) ;
+   
+
+}
+#card1 h1{
+   position: absolute;
+    bottom: 2%;
+   padding-left: 2vw;
+   font-weight: 900;
+   font-family: futura;
+}
+#card2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card2 h1{
+    position: absolute;
+     bottom: 2%;
+    padding-left: 2vw;
+    font-weight: 900;
+    font-family: futura;
+ }
+#card3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card3 h1{
+    position: absolute;
+     bottom: 2%;
+    padding-left: 1vw;
+    font-weight: 900;
+    font-family: futura;
+ }
+.overlay{
+    padding: 5vw 2vw;
+  width: 100%;
+  height: 100%;
+ 
+  background-color: #95C11E;
+  position: absolute;
+ border-radius:20px ;
+ opacity: 0;
+ transition: all ease 0.5s;
+}
+.overlay h4{
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+    color: black;
+}
+.overlay p{
+    font-size: 1.6vw;
+    margin-bottom: 1.5vw;
+    color: black;
+    font-weight: 600;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#green{
+    margin-top: 8vw;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#green img{
+    height:170%;
+    object-fit: cover;
+   
+}
+#green h4{
+    font-size: 3.5vw;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+}
+#food{
+   
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    padding: 5vw;
+}
+#foodleft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#image-div{
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-menu-e1702553754869-734x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-size: cover;
+  background-position: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    margin-right: 5vw;
+    margin-top: 5vw;
+}
+#foodright{
+    height: 100%;
+    width: 50%;
+  margin-left: 2vw;
+ 
+}
+#foodright h4{
+   text-transform: uppercase;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+#foodright p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    width: 81%;
+    font-weight: 100;
+
+}
+#foodright button{
+    margin-top: 2vw;
+    color: white;
+    background-color: black;
+    border: 2px solid #95C11E;
+    padding: 1.3vw 3vw;
+    border-radius: 30px;
+}
+#foodright button:hover{
+    background-color: #95c11e;
+    color: black;
+}
+#page4{
+    width: 100%;
+   min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+#paragraph{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#paragraph p{
+    text-align: center;
+    width: 60%;
+    font-size: 3vw;
+    font-weight: 900;
+}
+#paragraph img{
+    height: 2.5vw;
+    position: absolute;
+}
+#paragraph #colon1{
+    
+    left: 15%;
+  top: 10%;
+}
+
+#colon2{
+    right: 15%;
+    bottom: 10%;
+  }
+#question{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 3vw;
+ 
+}
+.elem{
+    width: 25%;
+    height: 70%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+.elem h2{
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #95C11E;
+position: absolute;
+font-weight: 900;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 10;
+transition: all ease 0.5s;
+}
+.elem:hover h2{
+    color: white;
+    background-color: transparent;
+}
+.elem:hover img{
+    scale:1
+}
+#question h1 {
+ 
+    font-size: 5.3vw;
+    position: absolute;
+    top: -5%;
+    font-weight: 900;
+    font-family: gilroy;
+    color: #000;
+    -webkit-text-stroke: 2px #fff;}
+
+footer{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 10;
+}
+footer > img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+#footer-top{
+
+width: 100%;
+height: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2vw;
+position: absolute;
+
+}
+#footer-top .elements{
+    height: 100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ 
+    padding: 0 5vw;
+  
+}
+#element1 img{
+   height: 45%;
+
+}
+
+#element2 h4{
+    font-size: 2vw;
+    white-space: nowrap;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
+   text-transform: uppercase;
+
+}
+#element3 h4{
+    font-size: 2vw;
+    white-space: nowrap;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
+   text-transform: uppercase;
+
+}
+#element4 h4{
+    font-size: 1.8vw;
+    white-space: nowrap;
+   color: black;
+   font-weight: 400;
+
+}
+#element4 h4 span{
+    font-size: 2vw;
+    white-space: nowrap;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+#footer-bottom{
+width: 100%;
+height: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#footer-bottom p{
+    margin-top: 25vw;
+    color: black;
+    font-weight: 600;
+}
+#p-right{
+    margin-left: 4vw;
+}
+
+@media (max-width:720px) {
+    #cursor{
+       display: none;
+    }
+    #cursor-blur{
+    display: none;
+
+    }
+    .respo-nav{
+        display: initial;
+        width: 100%;
+        height :100vh;
+        right: -100%;
+      position: fixed;
+        z-index: 999;
+        background-color: #95C11E;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        padding-top: 8vh;
+        
+        
+       
+    
+    }
+    .respo-nav h4{
+        color: black;
+        font-size: 6vw;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: 700;
+       padding-left: 5vw;
+
+    }
+    .respo-nav i{
+        position: absolute;
+color: black;
+font-size: 5vw;
+font-weight: 900;
+top: 5%;
+right: 8%;
+padding: 3vw 3vw;
+
+
+border-radius: 50%;
+    }
+    nav{
+        width: 100vw;
+        height: 10vh;
+    position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding:3vw 3vw;
+        gap: 10vw;
+        z-index: 999;
+    }
+    nav img{
+        height: 15vw;
+        margin-left: 2vw;
+    }
+    nav h4:hover{
+       color: #95c11e;
+    }
+    nav h4{
+        text-transform: uppercase;
+        font-size: 1.2vw;
+        font-weight: 900;
+        cursor: pointer;
+        display: none;
+       
+     
+    }
+    nav i{
+        display: initial;
+        margin-left: 50vw;
+        font-size:4vw;
+    }
+    #page1{
+        margin-top: -20vw;
+        min-height: 110vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        
+    }
+    
+    #page1 h1{
+        font-size: 15vw;
+        font-weight: 900;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #page1 h1::before{
+        content: "EAT. DRINK. PLAY.";
+        position: absolute;
+       color: black;
+       top: -4.5px;
+       left: -4.5px;
+    -webkit-text-stroke: 1px #95C11E;
+    z-index: -1;
+    }
+    #page1 h3{
+        font-size: 6vw;
+        font-weight: 900;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        text-align: center;
+
+    
+    }
+    #page1 p{
+        font-size: 5.5vw;
+        font-weight: 100;
+        width:95%;
+        text-align: center;
+        line-height: 6vw;
+        margin-top: 2vw;
+    }
+    #page2{
+        min-height: 100vh;
+         width: 100%;
+     z-index: 10;
+     position: relative;
+     flex-direction: column;
+     }
+     #about-us{
+        margin-top: 10vw;
+        height: 20vh;
+        width: 100%;
+        flex-direction: column;
+   
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 5vw;
+        z-index: 10;
+      margin-bottom: 15vw;
+        
+    }
+    #about-us img{
+        height: 90vw;
+        width: 90vw;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    #about-us #img2{
+        display: none;
+    }
+    #about-us-in{
+        width: 100%;
+        text-align: center;
+        margin-top:8vw;
+        margin-bottom: 8vw;
+    }
+    #about-us-in h4{
+        font-size: 10vw;
+        font-weight: 900;
+        margin-bottom: 5vw;
+        width: 100%;
+        white-space: nowrap;
+        text-align: center;
+    }
+    #about-us-in p{
+        font-size:5vw;
+        font-weight: 550;
+        width: 100%;
+        text-align: center;
+        line-height: 8vw;
+    }
+    #card-containers{
+        height: 110vh;
+        width: 100vw;
+       position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        z-index: 10;
+        flex-direction: column;
+        margin-top: 120vw;
+    }
+    .card{
+        height: 120vh;
+        width:90%;
+        background-color: blue;
+        border-radius: 20px;
+      background-size: cover;
+        background-position: center;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    #card1{
+        background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    }
+    #card2{
+        background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    }
+    #card3{
+        background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    }
+    .overlay{
+        padding: 5vw 2vw;
+      width: 100%;
+      height: 100%;
+     
+      background-color: #95C11E;
+      position: absolute;
+     border-radius:20px ;
+     opacity: 0;
+     transition: all ease 0.5s;
+    }
+    .overlay h4{
+        font-size:8vw;
+        margin-bottom: 1.5vw;
+        color: black;
+        white-space: nowrap;
+        font-family: futura;
+        font-weight: 900;
+        text-align: center;
+    }
+    .overlay p{
+        font-size: 4vw;
+        margin-bottom: 1.5vw;
+        color: rgb(65, 64, 64);
+        font-weight: 600;
+    }
+    .card:hover .overlay{
+        opacity: 1;
+    }
+    #page3{
+        min-height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    #green{
+        margin-top: 8vw;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(to left bottom, #119f3a, #ace022);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #green img{
+        height:115%;
+        object-fit: cover;
+       
+    }
+    #green h4{
+        font-size: 3.5vw;
+        text-align: center;
+        color: black;
+        font-weight: 900;
+        font-family: futura;
+        white-space: nowrap;
+    }
+    #food{
+   
+        width: 100vw;
+        height: 60vh;
+      
+        position: relative;
+        flex-direction: column;
+     
+        
+    }
+    #foodleft{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-left: 4vw;
+       
+    }
+    #image-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-menu-e1702553754869-734x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+      background-size: cover;
+      background-position: center;
+        width:100vw;
+        height: 98%;
+        border-radius: 20px;
+      
+        margin-top: 5vw;
+    }
+    #foodright{
+        height: 100%;
+        width: 100%;
+      margin-left: 2vw;
+position: absolute;
+margin-top: 71vw;
+justify-content: flex-start;
+     
+    }
+    #foodright h4{
+       text-transform: uppercase;
+        font-size: 9vw;
+        margin-bottom: 2vw;
+        margin-left: 4vw;
+        white-space: nowrap;
+        font-family: futura;
+        font-weight: 900;
+    }
+    #foodright p{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3.5vw;
+        line-height: 6vw;
+        width: 90%;
+        font-weight: 100;
+        margin-left: 4vw;
+        font-family: futura;
+    
+    }
+    #foodright button{
+        margin-left: 4vw;
+        margin-top: 5vw;
+        color: white;
+        background-color: black;
+        border: 2px solid #95C11E;
+        padding: 2.5vw 6vw;
+        border-radius: 30px;
+        font-family: futura;
+        font-weight: 100;
+    }
+    #foodright button:hover{
+        background-color: #95c11e;
+        color: black;
+    }
+    #page4{
+        width: 100%;
+       min-height: 100vh;
+        background-color: black;
+        position: relative;
+        margin-top: -10vw;
+      
+    
+    }
+   #paragraph{
+    margin-top: 20vh;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    #paragraph p{
+        text-align: center;
+        width: 90%;
+        font-size: 7vw;
+        font-weight: 900;
+    }
+    #paragraph img{
+        height:4vw;
+        position: absolute;
+    }
+    #paragraph #colon1{
+        
+        left:5%;
+      top: 10%;
+    }
+    
+    #colon2{
+        right:10%;
+        bottom: 5%;
+      }
+    #question{
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 3vw;
+        flex-direction: column;
+        margin-left: 5vw;
+        margin-top: 8vw;
+       
+     
+    }
+    .elem{
+        width:100%;
+        height: 100%;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 10;
+        transition: all ease 0.5s;
+        border: 1px solid #95C11E;
+    
+    }
+    .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        scale: 1.1;
+        opacity: .9;
+    }
+    .elem h2{
+        height: 100%;
+        width: 100%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #95C11E;
+    position: absolute;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+    transition: all ease 0.5s;
+   
+    }
+    .elem h2{
+        color: white;
+        background-color: transparent;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: futura;
+      font-weight: 900;
+      font-size: 6vw;
+    }
+    .elem:hover img{
+        scale:1
+    }
+    #question h1 {
+     white-space: nowrap;
+        font-size:6vw;
+        position: absolute;
+        top: -3.8%;
+        font-weight: 900;
+        font-family: gilroy;
+        color: #000;
+        -webkit-text-stroke: 2px #fff;
+        letter-spacing: 0.5vw;
+    }
+    footer{
+        height: 75vh;
+        width: 100vw;
+        background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 10;
+        flex-direction: column;
+      
+        margin-top: 10vw;
+    }
+    footer > img{
+        position: absolute;
+        left: 0;
+        height:60%;
+        z-index: 0;
+    }
+    #footer-top{
+    
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    position: absolute;
+    
+    }
+    #footer-top .elements{
+        height: 100%;
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5vw;
+
+     
+        padding: 0 5vw;
+      
+    }
+    #element1 img{
+       height:20vw;
+       position: absolute;
+       top: 6%;
+       left: 4%;
+    
+    }
+    
+    #element2 h4{
+        font-size:6vw;
+        white-space: nowrap;
+       color: black;
+       font-family: futura;
+       font-weight: 900;
+       text-transform: uppercase;
+       flex-direction: column;
+       width: 10%;
+       position: absolute;
+       left: 4%;
+       margin-top: -30vw;
+    }
+    #element3 h4{
+        font-size: 6vw;
+        white-space: nowrap;
+       color: black;
+       font-family: futura;
+       font-weight: 900;
+       text-transform: uppercase;
+       position: absolute;
+       left: 4%;
+       margin-top: 18vw;
+    
+    }
+    #element4 h4{
+        font-size: 4vw;
+        white-space: nowrap;
+       color: black;
+       font-weight: 400;
+       position: absolute;
+       left: 4%;
+       margin-top:85vw;
+    
+    }
+    #element4 h4 span{
+        font-size: 4vw;
+        white-space: nowrap;
+       color: black;
+       font-family: futura;
+       font-weight: 900;
+       text-transform: uppercase;
+    }
+    #footer-bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom:5%;
+    left: 2%;
+    
+    }
+    #footer-bottom p{
+        margin-top: 25vw;
+        color: rgb(39, 38, 38);
+        font-weight: 100;
+        font-size:3vw;
+        flex-wrap:wrap ;
+        line-height: 4vw;
+
+    }
+    #p-right{
+        margin-left: 2vw;
+    
+    }
+    }
+
+    
+    
